@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    
+    #sam{
+        padding-top: 150px;
+        
+    }
+    
+    
+    .co{
+        font-size: 35px;
+        text-align: center;
+        color: white;
+    }
+    
+    .input-group-addon{
+        color:orange;
+        background-color: #ffffff;
+    }
+    
+    .sam{
+        color: darkorchid;
+        font-family: serif;
+        font-size: 18px;
+    }
+    
+    
+    body{
+        background-color: #ff7700;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    }
+
+</style>
+</head>
+<body>
+<div class="container" id="sam">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default for ">
+                <div class="panel-heading" style="background-color: darkorchid"><p class="co">Sign In</p>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                           <label for="username" class="col-sm-3 control-label sam">Username:-</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                <div class="input-group-addon">
+	                           <span class="glyphicon glyphicon-user"></span>
+                               </div>
+                               <input type="text" class="form-control" id="username" name="username" required="" autocomplete="off">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label sam">Password:-</label>
+                            <div class="col-sm-9">
+                                <div class="input-group">
+                                <div class="input-group-addon">
+	                           <span class="glyphicon glyphicon-eye-close"></span>
+                               </div>
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="" required="" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label style="color: darkorchid">
+                                        <input type="checkbox">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">Not Registered? <a href="Untitled-2.html" class="">Register here</a>
+                </div>
+                <div class="panel-footer">Forgot Password? <a href="#" class="">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

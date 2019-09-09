@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+
+     
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: mediumvioletred;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: mediumvioletred;
+    font-size: 50px;
+  }
+  .logo {
+    color: mediumvioletred;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: mediumvioletred;
+  }
+  .carousel-indicators li {
+    border-color:mediumvioletred;
+  }
+  .carousel-indicators li.active {
+    background-color: mediumvioletred;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: mediumvioletred;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: mediumvioletred;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">PROJECT MARKET</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+          <li><a class="dropdown-togglr" data-toggle="dropdown">SERVICES<span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: greenyellow">
+           <li class="dropdown-header"><h4 style="color: deepskyblue">BUY PROJECT</h4></li>
+            <li class="dropdown-header"><h5 style="color: deeppink">DOMAINS</h5></li>
+           <li><a>CLOUD COMPUTING</a></li>
+           <li><a>MACHINE LEARNING</a></li>
+            <li><a>ARTIFICIAL INTELLIGENCE</a></li>
+              <li><a>NETWORK SECURITY</a></li>
+             <li class="divider"></li>
+              <li class="dropdown-header" style="font-size: 23px;"><a href="Sale.html">SALE PROJECT</a></li>
+              <li class="dropdown-header" style="font-size: 23px;"><a href="">CUSTOMIZED PROJECTS</a></li>
+                </ul>   
+          </li>
+        <li><a href="#portfolio">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="sign%20in.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>PROJECT MARKET</h1> 
+  <p>WE SPECIALIZE IN PROJECT SERVICES</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Delivering the softwares with the more simpler ways</h4><br>
+      <p>Write about the company  </p>
+      <br><button class="btn btn-success btn-lg" style="background-color: orange">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tags logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-fire logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> write about the mission</h4><br>
+      <p><strong>VISION:</strong> write about the vision</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>PROJECTS</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="" alt="" width="400" height="300">
+        <p><strong>Data Mining</strong></p>
+        <div data-toggle="modal" data-target="#exampleModalCenter">
+        <h4>Web Mining Using Rapidminer Tool</h4>
+        </div>
+          <!--Model-->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">WEB MINING USING RAPIDMINER</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p style="color: darkorange"><strong>***DESCRIPTION***</strong></p>
+     In recent times, due to the rapid usage of World Wide Web, websites are the information provider to the Internet users. Storing and retrieving the information from the web is always a challenging task. Web mining, the term is defined as extract needed information to the users from the Web. Here, the information provided by the Web is not only the exact information of user needs but also suggest the information associated to the exact one. Web mining is classified into three sub tasks such as, Web Content, Web Structure and Web Usage Mining. This project, introduces the applications and the mining process on financial websites by using data  mining tool (open source) Rapidminer.<br><br>
+        <p style="color:darkorange"><strong>***FEATURES***</strong></p>
+          1.There is no need of programming language or programming skills.<br>
+          2.Tool is very simple to understand and perform the processes very easily.<br>
+          3.Designing   becomes so easy with the help of  tool(Rapidminer).<br>
+          4.We can easily find the similarity of different financial websites or webpages very easily.<br><br>
+          
+          <p style="color: darkorange"><strong>TECHNOLOGIES USED:-Rapidminer Tool(Opensource)</strong></p>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Click To Buy</button>
+      </div>
+    </div>
+  </div>
+</div>   
+
+          <!--Model-->
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="" alt="" width="400" height="300">
+        <p><strong>Cloud Computing</strong></p>
+        <p>write about the that thing </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="" alt="" width="400" height="300">
+        <p><strong></strong></p>
+        <p>write about the that thing </p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>The Founder's Desk </h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4 style="color: deepskyblue;font-size: 23px;font-family: cursive">"Hello"<br><span>Himansshu Mital,Designation,Pune</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: deepskyblue;font-size: 23px">"One word... WOW!!"<br><span>Anuj Kulkarni,Designation,Pune</span></h4>
+      </div>
+      <div class="item">
+        <h4 style="color: deepskyblue;font-size: 23px">"Hi"<br><span>Prinkle Shete,Designation,Pune</span></h4>
+      </div>
+        <div class="item">
+        <h4 style="color: deepskyblue;font-size: 23px">"Hi"<br><span>Rohan Gokhale,Designation,Pune</span></h4>
+      </div>
+        <div class="item">
+        <h4 style="color: deepskyblue;font-size: 23px">"Hello"<br><span>Sanket Masudge,Designation,Pune</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<img src="Dolphin-jumping-sea-ocean-sea-waves-sunset-Wallpaper-HD-4000x2500-1920x1080.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+    
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Pune, INDIA</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 1234567891 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> 232717an@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-sm-6 form-group">
+            <input class="form-control" id="mobnum" name="mobnum" placeholder="Mobile Number(optional)" type="text" maxlength="10">
+        </div>
+        
+        </div>
+      <textarea class="form-control" id="info" name="info" placeholder="Description About You" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>© 2019 Copyright:QUINTET TECHNOLOGIES Pvt.Ltd <a href="">All Rights Reserved.</a></p>
+    <p><a href="">Copyright|</a><a href="">Disclaimer|</a><a href="">Privacy Statement</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+</script>
+</body>
+</html>
+
